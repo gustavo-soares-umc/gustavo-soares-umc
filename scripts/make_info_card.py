@@ -38,11 +38,9 @@ FONT = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
 
 # rows: ("kv", key, value) | ("sec", title, "") | ("bullet", text, "")
 ROWS = [
-    ("head", "eduardo@github", ""),
+    ("head", "gustavo-soares-umc@github", ""),
     ("sep", "", ""),
     ("kv", "Role", "Software Engineer"),
-    ("kv", "Company", "Itaú Unibanco"),
-    ("kv", "Edu", "Systems Analysis & Dev. - FACENS"),
     ("kv", "Local", "São Paulo, Brazil"),
     ("gap", "", ""),
     ("sec", "Stack", ""),
@@ -90,7 +88,7 @@ def main() -> None:
         f'<circle cx="{PAD+16}" cy="{TITLEBAR_H/2}" r="5" fill="#ffbd2e"/>',
         f'<circle cx="{PAD+32}" cy="{TITLEBAR_H/2}" r="5" fill="#27c93f"/>',
         f'<text x="{W/2:.0f}" y="{TITLEBAR_H/2 + 4:.0f}" fill="{TITLE_TEXT}" '
-        f'text-anchor="middle" font-size="12">gustavo@github: ~$ fastfetch</text>',
+        f'text-anchor="middle" font-size="12">gustavo-soares-umc@github: ~$ fastfetch</text>',
     ]
 
     y = 58
@@ -148,12 +146,12 @@ def main() -> None:
     # bottom status bar (mirrors avi-ascii.svg): divider + prompt + blinking cursor
     line_y = H - STATUS_H
     status_y = line_y + 19
-    prefix = "eduardo@github:~$ fastfetch "  # up to the cursor
+    prefix = "gustavo-soares-umc@github:~$ fastfetch "  # up to the cursor
     cursor_x = PAD + len(prefix) * 13 * 0.6
     out.append(f'<line x1="0" y1="{line_y}" x2="{W}" y2="{line_y}" stroke="{FRAME}"/>')
     out.append(
         f'<text x="{PAD}" y="{status_y}" fill="{TITLE_TEXT}" font-size="13">'
-        f'eduardo@github:~$ <tspan fill="{VAL}">fastfetch</tspan></text>'
+        f'gustavo-soares-umc@github:~$ <tspan fill="{VAL}">fastfetch</tspan></text>'
     )
     blink = (
         '' if STATIC else

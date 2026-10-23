@@ -9,14 +9,14 @@
 
 <br>
 
-<h3><code>gustavo@github ~ $ ./contributions.sh</code></h3>
+<h3><code>gustavo-soares-umc@github ~ $ ./contributions.sh</code></h3>
 
 <img src="./contrib-heatmap.svg" width="860" alt="Contributions in the last 12 months" />
 
 <br><br>
 
 <details>
-<summary><code>gustavo@github ~ $ cat stack.md</code></summary>
+<summary><code>gustavo-soares-umc@github ~ $ cat stack.md</code></summary>
 
 <br>
 
